@@ -124,10 +124,10 @@ The function should not move the point or mark or change the match data."
 (eval-when-compile
   (defmacro rainbow-delimiters--define-depth-faces ()
     (let ((faces '())
-          (light-colors ["#707183" "#7388d6" "#909183" "#709870" "#907373"
-                         "#6276ba" "#858580" "#80a880" "#887070"])
-          (dark-colors ["grey55" "#93a8c6" "#b0b1a3" "#97b098" "#aebed8"
-                        "#b0b0b3" "#90a890" "#a2b6da" "#9cb6ad"]))
+          (light-colors ["#4b50a7" "#5778f1" "#aeb45f" "#4bbc4b" "#b54d4d"
+                         "#4063db" "#aaaa5a" "#5fc85f" "#ad4a4a"])
+          (dark-colors ["#ae6a6a" "#7aa3de" "#c5ca89" "#7bcb7e" "#9cb9e9"
+                        "#9898ca" "#72c572" "#8eb0ed" "#82cfb4"]))
       (dotimes (i 9)
         (push `(defface ,(intern (format "rainbow-delimiters-depth-%d-face" (1+ i)))
                  '((default (:inherit rainbow-delimiters-base-face))
